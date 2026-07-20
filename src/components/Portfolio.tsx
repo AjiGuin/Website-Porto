@@ -3,6 +3,7 @@ import { Eye, FileText } from 'lucide-react';
 import { useState } from 'react';
 import { filterCategories, projects } from '../data/projects';
 import type { Project } from '../types';
+import PlaceholderImage from './PlaceholderImage';
 import ProjectModal from './ProjectModal';
 import Reveal from './Reveal';
 import SectionHeading from './SectionHeading';
@@ -58,7 +59,7 @@ export default function Portfolio() {
               >
                 <div className="relative aspect-[4/3] overflow-hidden">
                   <div className="h-full w-full transition-transform duration-700 ease-out group-hover:scale-110">
-                    <img src="/images/Bucket Truck.jpg" alt="Deskripsi" className="h-full w-full object-cover" />
+                    <PlaceholderImage label={project.thumbnailLabel} rounded="md" className="rounded-none" />
                   </div>
                   <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-ink/70 via-ink/0 to-ink/0 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
                   <div className="absolute inset-x-0 bottom-0 flex translate-y-3 items-center gap-2 p-4 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100">
