@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-paper text-ink font-body antialiased;
+  font-feature-settings: 'ss01' on, 'cv01' on;
+}
+
+::selection {
+  background: #0d0d0e;
+  color: #fafaf8;
+}
+
+/* Slim, quiet scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #d7d9dc;
+  border-radius: 999px;
+  border: 3px solid #fafaf8;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9a9da4;
+}
+
+/* Visible keyboard focus, kept subtle but real */
+:focus-visible {
+  outline: 2px solid #0d0d0e;
+  outline-offset: 3px;
+}
+
+/* Hide native cursor for pointer devices only; touch devices keep default */
+@media (hover: hover) and (pointer: fine) {
+  .cursor-enabled {
+    cursor: none;
+  }
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Dimension-line section eyebrow */
+.dim-line {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.dim-line::before,
+.dim-line::after {
+  content: '';
+  height: 1px;
+  flex: 1;
+  background: currentColor;
+  opacity: 0.25;
+}
+.dim-line::before {
+  max-width: 2rem;
+}
+
+/* Blueprint corner crop marks */
+.crop-marks {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.crop-marks span {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-color: rgba(13, 13, 14, 0.22);
+}
+.crop-marks span:nth-child(1) {
+  top: 0;
+  left: 0;
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
+.crop-marks span:nth-child(2) {
+  top: 0;
+  right: 0;
+  border-top: 1px solid;
+  border-right: 1px solid;
+}
+.crop-marks span:nth-child(3) {
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid;
+  border-left: 1px solid;
+}
+.crop-marks span:nth-child(4) {
+  bottom: 0;
+  right: 0;
+  border-bottom: 1px solid;
+  border-right: 1px solid;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
