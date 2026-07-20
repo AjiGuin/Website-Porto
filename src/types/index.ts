@@ -11,6 +11,7 @@ export interface Project {
   id: string;
   title: string;
   category: SoftwareCategory;
+  image?: string;
   software: string[];
   year: number;
   duration: string;

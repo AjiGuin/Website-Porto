@@ -8,6 +8,9 @@ export const projects: Project[] = [
     software: ['SolidWorks'],
     year: 2026,
     duration: '2 days',
+    // Contoh cara menambahkan foto: taruh file di public/images/projects/,
+    // lalu aktifkan baris di bawah ini (hapus tanda //).
+    image: '/images/projects/proj-01.jpg',
     shortDescription: 'Desain rangka dan assembly sistem frame.',
     fullDescription:
       'Proyek ini mencakup perancangan frame dari tahap sketsa 2D hingga model assembly 3D, dan toleransi pemasangan antar part.',
@@ -18,6 +21,7 @@ export const projects: Project[] = [
     id: 'proj-02',
     title: 'Assembly Bucket Truck',
     category: 'SolidWorks',
+    image: '/images/projects/proj-02.jpg',
     software: ['SolidWorks'],
     year: 2026,
     duration: '1 week',
