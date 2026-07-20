@@ -84,7 +84,7 @@ export default function Hero() {
           <div className="grid grid-cols-2 divide-x divide-line-strong border-b border-line-strong">
             <div className="px-2 py-1.5">
               <p className="text-mist">Drawn by</p>
-              <p className="mt-0.5 text-ink normal-case">Rangga A. P.</p>
+              <p className="mt-0.5 text-ink normal-case">Aji F. S.</p>
             </div>
             <div className="px-2 py-1.5">
               <p className="text-mist">Scale</p>
@@ -98,7 +98,7 @@ export default function Hero() {
             </div>
             <div className="px-2 py-1.5">
               <p className="text-mist">Rev.</p>
-              <p className="mt-0.5 text-ink">2026.01</p>
+              <p className="mt-0.5 text-ink">2026.</p>
             </div>
           </div>
         </div>
