@@ -2,7 +2,6 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { Clock, Layers, X } from 'lucide-react';
 import { useEffect } from 'react';
 import type { Project } from '../types';
-import PlaceholderImage from './PlaceholderImage';
 
 interface ProjectModalProps {
   project: Project | null;
@@ -55,7 +54,7 @@ export default function ProjectModal({ project, mode, onClose }: ProjectModalPro
             </button>
 
             <div className="aspect-[16/10] w-full">
-              <PlaceholderImage label={project.thumbnailLabel} rounded="md" className="rounded-none rounded-t-2xl" />
+               <img src={project.image} alt={project.title} className="h-full w-full rounded-t-2xl object-cover"/>
             </div>
 
             {mode === 'preview' ? (
