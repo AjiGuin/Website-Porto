@@ -28,7 +28,7 @@ export const projects: Project[] = [
     shortDescription: 'Gambar teknik 2D & 3D lengkap Assembly dengan dimensi dan toleransi untuk bucket pembuangan Gram CNC.',
     fullDescription:
       'Penyusunan gambar kerja (working drawing) 2D dari model bucket, termasuk tampak depan, atas, samping, dan potongan. Dimensi disusun mengikuti ukuran lapangan untuk kebutuhan pembuangan Gram CNC.',
-    skillsUsed: ['Solidworks', 'Dimensioning', 'ISO Standard', 'Section View'],
+    skillsUsed: ['Solidworks', 'Magang'],
     thumbnailLabel: 'FIG. 02 — BUCKET TRUCK',
   },
   {
@@ -42,7 +42,7 @@ export const projects: Project[] = [
     shortDescription: 'Membuat part Pipe Support untuk penyangga Tanki, hingga penyusunan Assembly, dan menjadikan mempecah gambar assembly untuk memperjelas gambar.',
     fullDescription:
       'Model 3D Pipe Support yang dirancang untuk jalur pipa. Dilengkapi analisis simulasi statis untuk memastikan housing mampu menahan beban operasional.',
-    skillsUsed: ['Solid Modeling', 'Sheet Metal', 'Assembly', 'Solidworks'],
+    skillsUsed: ['Sheet Metal', 'Assembly', 'Solidworks'],
     thumbnailLabel: 'FIG. 03 — SPECIAL PIPE SUPPORT ',
   },
   {
