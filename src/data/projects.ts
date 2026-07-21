@@ -42,7 +42,7 @@ export const projects: Project[] = [
     shortDescription: 'Membuat part Pipe Support untuk penyangga Tanki, hingga penyusunan Assembly, dan menjadikan mempecah gambar assembly untuk memperjelas gambar.',
     fullDescription:
       'Model 3D Pipe Support yang dirancang untuk jalur pipa. Dilengkapi analisis simulasi statis untuk memastikan housing mampu menahan beban operasional.',
-    skillsUsed: ['Sheet Metal', 'Assembly', 'Solidworks'],
+    skillsUsed: ['Sheet Metal', 'Assembly', 'Solidworks', 'Magang'],
     thumbnailLabel: 'FIG. 03 — SPECIAL PIPE SUPPORT ',
   },
   {
