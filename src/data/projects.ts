@@ -35,6 +35,7 @@ export const projects: Project[] = [
     id: 'proj-03',
     title: 'Special Pipe Support  ',
     category: 'SolidWorks',
+    image: '/images/projects/proj-03.jpg',
     software: ['SolidWorks'],
     year: 2026,
     duration: '3 days',
